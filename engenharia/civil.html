@@ -6,6 +6,13 @@
     <title>KM PROJETOS & ENGENHARIA | Civil</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Ajuste específico para esta página de serviços densos */
+        .card h3 { border-bottom: 2px solid #ffb400; display: inline-block; padding-bottom: 5px; margin-bottom: 15px; }
+        .card ul { list-style: none; text-align: left; padding: 0; }
+        .card ul li { margin-bottom: 8px; font-size: 0.9rem; position: relative; padding-left: 20px; }
+        .card ul li::before { content: '✔'; position: absolute; left: 0; color: #ffb400; font-weight: bold; }
+    </style>
 </head>
 <body>
     <header>
@@ -33,10 +40,60 @@
             <h1>Engenharia Civil</h1>
             <p>Excelência técnica em Conceição do Araguaia - PA. Projetos civis, ambientais, segurança do trabalho e Tecnologia.</p>
         </section>
+
         <section class="container">
+            <h2>Soluções Completas em Engenharia</h2>
+            <p style="margin-bottom: 40px;">Do planejamento à execução final, garantindo segurança e conformidade normativa.</p>
+            
             <div class="grid-servicos">
-                <div class="card"><span class="icon">🏗️</span><h3>Estruturas</h3><p>Cálculos e dimensionamento.</p></div>
-                <div class="card"><span class="icon">🏙️</span><h3>Laudos</h3><p>Vistorias e regularizações.</p></div>
+                
+                <div class="card">
+                    <div class="icon">📐</div>
+                    <h3>Elaboração de Projetos</h3>
+                    <ul>
+                        <li><strong>Projetos Estruturais:</strong> Concreto, Metal, Alvenaria e Fundações.</li>
+                        <li><strong>Hidrossanitários:</strong> Redes de água e esgoto pluvial.</li>
+                        <li><strong>Elétricos (Baixa Tensão):</strong> Instalações prediais e residenciais.</li>
+                        <li><strong>Terraplenagem e Contenção:</strong> Muros de arrimo e geotecnia.</li>
+                        <li><strong>Infraestrutura Urbana:</strong> Pavimentação e saneamento.</li>
+                        <li><strong>Arquitetura:</strong> Projetos complementares residenciais e comerciais.</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="icon">🏗️</div>
+                    <h3>Gestão e Execução</h3>
+                    <ul>
+                        <li><strong>Construção Civil:</strong> Execução residencial e industrial.</li>
+                        <li><strong>Gerenciamento e Fiscalização:</strong> Controle de custos e cronograma.</li>
+                        <li><strong>Orçamento de Obras:</strong> Levantamento e composição de preços.</li>
+                        <li><strong>Reforma e Retrofit:</strong> Modernização de estruturas.</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="icon">🔎</div>
+                    <h3>Laudos e Perícias</h3>
+                    <ul>
+                        <li><strong>Engenharia Diagnóstica:</strong> Correção de patologias e infiltrações.</li>
+                        <li><strong>Laudos Técnicos:</strong> Estabilidade e habitabilidade.</li>
+                        <li><strong>Vistorias de Vizinhança:</strong> Prevenção de litígios.</li>
+                        <li><strong>Pareceres Técnicos:</strong> Conformidade normativa.</li>
+                        <li><strong>Perícias Judiciais:</strong> Atuação como perito oficial.</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="icon">📄</div>
+                    <h3>Regularização Legal</h3>
+                    <ul>
+                        <li><strong>Regularização de Imóveis:</strong> Habite-se e Averbação em cartório.</li>
+                        <li><strong>Projetos As-Built:</strong> Registro do projeto "como construído".</li>
+                        <li><strong>Emissão de ART:</strong> Responsabilidade Técnica legalizada.</li>
+                        <li><strong>Legalização:</strong> Processos em Prefeituras e Receita Federal.</li>
+                    </ul>
+                </div>
+
             </div>
         </section>
     </main>
