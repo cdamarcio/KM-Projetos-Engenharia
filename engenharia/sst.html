@@ -6,6 +6,12 @@
     <title>KM PROJETOS & ENGENHARIA | SST</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .card h3 { border-bottom: 2px solid #ffb400; display: inline-block; padding-bottom: 5px; margin-bottom: 15px; }
+        .card ul { list-style: none; text-align: left; padding: 0; }
+        .card ul li { margin-bottom: 8px; font-size: 0.9rem; position: relative; padding-left: 20px; }
+        .card ul li::before { content: '✔'; position: absolute; left: 0; color: #ffb400; font-weight: bold; }
+    </style>
 </head>
 <body>
     <header>
@@ -30,13 +36,41 @@
 
     <main>
         <section class="hero">
-            <h1>Segurança do Trabalho</h1>
+            <h1>Saúde e Segurança do Trabalho</h1>
             <p>Excelência técnica em Conceição do Araguaia - PA. Projetos civis, ambientais, segurança do trabalho e Tecnologia.</p>
         </section>
+
         <section class="container">
+            <h2>Gestão Ocupacional e eSocial</h2>
             <div class="grid-servicos">
-                <div class="card"><span class="icon">🛡️</span><h3>Treinamentos</h3><p>NR-10, NR-35 e NR-12.</p></div>
-                <div class="card"><span class="icon">📝</span><h3>eSocial</h3><p>PGR, PCMSO e LTCAT.</p></div>
+                <div class="card">
+                    <div class="icon">🛡️</div>
+                    <h3>Treinamentos (NRs)</h3>
+                    <ul>
+                        <li><strong>NR-10:</strong> Segurança em Instalações Elétricas.</li>
+                        <li><strong>NR-35:</strong> Trabalho em Altura.</li>
+                        <li><strong>NR-12:</strong> Segurança em Máquinas e Equipamentos.</li>
+                        <li><strong>NR-18:</strong> Segurança na Construção Civil.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="icon">📝</div>
+                    <h3>Documentação Técnica</h3>
+                    <ul>
+                        <li><strong>PGR:</strong> Programa de Gerenciamento de Riscos.</li>
+                        <li><strong>PCMSO:</strong> Programa de Controle Médico Ocupacional.</li>
+                        <li><strong>LTCAT:</strong> Laudo das Condições Ambientais do Trabalho.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="icon">🖥️</div>
+                    <h3>eSocial e Auditoria</h3>
+                    <ul>
+                        <li><strong>Eventos SST:</strong> Envio S-2210, S-2220 e S-2240.</li>
+                        <li><strong>Insalubridade:</strong> Laudos de periculosidade e riscos.</li>
+                        <li><strong>Auditoria:</strong> Inspeção técnica predial e industrial.</li>
+                    </ul>
+                </div>
             </div>
         </section>
     </main>

@@ -6,6 +6,13 @@
     <title>KM PROJETOS & ENGENHARIA | Computação</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Ajuste específico para listagem de serviços de Tecnologia */
+        .card h3 { border-bottom: 2px solid #ffb400; display: inline-block; padding-bottom: 5px; margin-bottom: 15px; }
+        .card ul { list-style: none; text-align: left; padding: 0; }
+        .card ul li { margin-bottom: 8px; font-size: 0.9rem; position: relative; padding-left: 20px; }
+        .card ul li::before { content: '✔'; position: absolute; left: 0; color: #ffb400; font-weight: bold; }
+    </style>
 </head>
 <body>
     <header>
@@ -30,13 +37,49 @@
 
     <main>
         <section class="hero">
-            <h1>Tecnologia</h1>
+            <h1>Engenharia de Computação</h1>
             <p>Excelência técnica em Conceição do Araguaia - PA. Projetos civis, ambientais, segurança do trabalho e Tecnologia.</p>
         </section>
+
         <section class="container">
+            <h2>Tecnologia da Informação e Inovação</h2>
+            <p style="margin-bottom: 40px;">Soluções digitais inteligentes, automação e consultoria tecnológica de alto nível.</p>
+            
             <div class="grid-servicos">
-                <div class="card"><span class="icon">💻</span><h3>Sistemas</h3><p>Softwares e APIs.</p></div>
-                <div class="card"><span class="icon">🌐</span><h3>Web3</h3><p>Inovação e Blockchain.</p></div>
+                
+                <div class="card">
+                    <div class="icon">💻</div>
+                    <h3>Sistemas Personalizados</h3>
+                    <ul>
+                        <li><strong>Softwares sob medida:</strong> ERPs, CRMs e ferramentas de gestão.</li>
+                        <li><strong>Sistemas Web:</strong> Plataformas escaláveis com Node.js e Python.</li>
+                        <li><strong>MazzEscolar:</strong> Gestão educacional e acadêmica integrada.</li>
+                        <li><strong>Automação Comercial:</strong> Integração com APIs e faturamento.</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="icon">🌐</div>
+                    <h3>Web3 e Blockchain</h3>
+                    <ul>
+                        <li><strong>Contratos Inteligentes:</strong> Desenvolvimento de Smart Contracts seguros.</li>
+                        <li><strong>DApps:</strong> Aplicativos descentralizados para diversos setores.</li>
+                        <li><strong>Consultoria Web3:</strong> Transição tecnológica para a nova web.</li>
+                        <li><strong>Tokenização:</strong> Ativos digitais e integração com blockchain.</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="icon">⚙️</div>
+                    <h3>Infraestrutura e Integrações</h3>
+                    <ul>
+                        <li><strong>Integração de APIs:</strong> Conexão com SEFAZ, bancos e serviços externos.</li>
+                        <li><strong>Engenharia de Dados:</strong> Otimização de bancos de dados e fluxos de informação.</li>
+                        <li><strong>Segurança Digital:</strong> Consultoria em proteção de dados e sistemas.</li>
+                        <li><strong>Suporte Técnico:</strong> Consultoria especializada em infraestrutura de TI.</li>
+                    </ul>
+                </div>
+
             </div>
         </section>
     </main>
@@ -50,6 +93,8 @@
         </div>
     </footer>
 
-    <a href="https://wa.me/5594992500073" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://wa.me/5594992500073" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 </body>
 </html>
