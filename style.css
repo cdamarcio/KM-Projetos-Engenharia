@@ -42,7 +42,6 @@ header {
     text-decoration: none;
 }
 
-/* Navegação para PC */
 .nav-links {
     display: flex;
     list-style: none;
@@ -61,44 +60,25 @@ header {
     transition: 0.3s;
 }
 
-.nav-links a:hover {
-    color: #ffb400;
-}
+.nav-links a:hover { color: #ffb400; }
 
-/* Dropdown para PC */
+/* Dropdown PC */
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #222;
-    min-width: 180px;
+    min-width: 200px;
     top: 100%;
     left: 0;
     box-shadow: 0 8px 16px rgba(0,0,0,0.5);
 }
 
-.dropdown-content li {
-    margin: 0;
-    width: 100%;
-    border-bottom: 1px solid #333;
-}
+.dropdown:hover .dropdown-content { display: block; }
 
-.dropdown:hover .dropdown-content {
-    display: block;
-}
+#menu-check { display: none; }
+.menu-btn { display: none; color: #ffb400; font-size: 1.6rem; cursor: pointer; }
 
-/* Botão do Menu Mobile (Escondido no PC) */
-#menu-check {
-    display: none;
-}
-
-.menu-btn {
-    display: none;
-    color: #ffb400;
-    font-size: 1.6rem;
-    cursor: pointer;
-}
-
-/* --- 3. SEÇÃO HERO (PADRÃO) --- */
+/* --- 3. HERO PADRÃO --- */
 .hero {
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070&auto=format&fit=crop');
     background-size: cover;
@@ -112,46 +92,19 @@ header {
     text-align: center;
     padding: 0 20px;
 }
-
 .hero h1 { font-size: 2.5rem; margin-bottom: 10px; }
 
-/* --- 4. GRID DE SERVIÇOS (INDEX) - 2 POR LINHA NO PC --- */
+/* --- 4. GRIDS (SERVIÇOS E EQUIPE - 2 COLUNAS NO PC) --- */
 .container {
     max-width: 1200px;
     margin: 40px auto;
     padding: 0 20px;
-}
-
-.grid-servicos {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Força 2 por linha no PC */
-    gap: 25px;
-    margin-top: 30px;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.card {
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     text-align: center;
-    border-bottom: 5px solid #ffb400;
-    transition: 0.3s;
 }
 
-.card .icon {
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-    display: block;
-}
-
-/* --- 5. PÁGINA SOBRE (EQUIPE CIRCULAR - 2 POR LINHA NO PC) --- */
-.equipe-grid {
+.grid-servicos, .equipe-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Força 2 por linha no PC */
+    grid-template-columns: 1fr 1fr; /* 2 por linha no PC */
     gap: 30px;
     margin-top: 40px;
     max-width: 1000px;
@@ -159,6 +112,7 @@ header {
     margin-right: auto;
 }
 
+/* Cards de Membros (SOBRE) */
 .membro-card {
     background: white;
     border-radius: 10px;
@@ -167,7 +121,8 @@ header {
     padding: 30px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* Centraliza tudo horizontalmente */
+    text-align: center;
 }
 
 .foto-container {
@@ -187,22 +142,20 @@ header {
     object-position: top center;
 }
 
-.membro-info { width: 100%; text-align: left; }
-.membro-info h2 { text-align: center; margin-bottom: 10px; color: #1a1a1a; font-size: 1.3rem; }
-.membro-info p { font-size: 0.9rem; margin: 5px 0; display: flex; align-items: center; color: #555; }
-.check-icon { color: #ffb400; margin-right: 10px; }
+.membro-info h2 { font-size: 1.3rem; margin-bottom: 8px; color: #1a1a1a; }
+.membro-info p { font-size: 0.9rem; margin: 2px 0; color: #555; }
 
 .crea-box {
-    margin-top: 10px;
+    margin-top: 12px;
     background: #eee;
-    padding: 4px 8px;
+    padding: 4px 10px;
     font-weight: bold;
     font-size: 0.8rem;
     display: inline-block;
     border-radius: 4px;
 }
 
-/* --- 6. PÁGINA DE CONTACTO (3 NA MESMA LINHA NO PC) --- */
+/* --- 5. GRID DE CONTATOS (3 COLUNAS NO PC) --- */
 .contato-grid {
     display: flex;
     justify-content: center;
@@ -214,24 +167,25 @@ header {
 
 .contato-card {
     background: white;
-    padding: 40px 20px;
+    padding: 30px 20px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     border-bottom: 5px solid #ffb400;
     flex: 1;
     min-width: 300px;
-    max-width: 360px;
+    max-width: 350px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.contato-icon { font-size: 3rem; color: #ffb400; margin-bottom: 20px; }
+.contato-icon { font-size: 3rem; color: #ffb400; margin-bottom: 15px; }
+
 .btn-contato {
     display: inline-block;
-    margin-top: 20px;
-    padding: 12px 24px;
+    margin-top: 15px;
+    padding: 10px 20px;
     background-color: #1a1a1a;
     color: #ffb400;
     text-decoration: none;
@@ -241,7 +195,7 @@ header {
 }
 .btn-contato:hover { background-color: #ffb400; color: #1a1a1a; }
 
-/* --- 7. RODAPÉ E WHATSAPP --- */
+/* --- 6. RODAPÉ E WHATSAPP --- */
 footer {
     background-color: #1a1a1a;
     color: white;
@@ -269,10 +223,9 @@ footer {
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
-/* --- 8. RESPONSIVIDADE (MOBILE ESTILO APP) --- */
+/* --- 7. RESPONSIVIDADE (MOBILE ESTILO APP) --- */
 @media (max-width: 768px) {
     .menu-btn { display: block; }
-
     .nav-links {
         position: fixed;
         top: 70px;
@@ -286,21 +239,13 @@ footer {
         transition: 0.4s;
         z-index: 999;
     }
-
     #menu-check:checked ~ .nav-links { left: 0; }
-
     .nav-links li { margin: 15px 0; width: 100%; text-align: center; }
-    .nav-links a { font-size: 1.2rem; display: block; width: 100%; }
-
-    /* Força 1 coluna no telemóvel para tudo */
+    
     .grid-servicos, .equipe-grid, .contato-grid {
         grid-template-columns: 1fr;
         flex-direction: column;
         align-items: center;
-        padding: 0 15px;
     }
-
     .contato-card { width: 100%; }
-    .foto-container { width: 180px; height: 180px; }
-    .hero h1 { font-size: 1.8rem; }
 }
