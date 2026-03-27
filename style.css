@@ -64,16 +64,17 @@ header {
 
 /* Dropdown PC */
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #222;
-    min-width: 200px;
-    top: 100%;
-    left: 0;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+    display: none;       /* Esconde por padrão */
+    position: absolute;  /* Faz flutuar sobre o conteúdo */
+    list-style: none;    /* Remove as bolinhas da lista interna */
+    background-color: #1a1a1a;
+    min-width: 180px;
+    z-index: 1000;
 }
 
-.dropdown:hover .dropdown-content { display: block; }
+.dropdown:hover .dropdown-content { 
+    display: block;      /* Mostra ao passar o mouse */
+}
 
 #menu-check { display: none; }
 .menu-btn { display: none; color: #ffb400; font-size: 1.6rem; cursor: pointer; }
