@@ -222,32 +222,70 @@ footer {
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
-/* --- 7. RESPONSIVIDADE (MOBILE ESTILO APP) --- */
+/* --- 7. RESPONSIVIDADE MOBILE (PADRÃO APP) --- */
 @media (max-width: 768px) {
-    .menu-btn { display: block; }
+    /* Botão Hambúrguer no Canto Superior Direito */
+    .menu-btn {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 1001;
+        font-size: 1.8rem; /* Aumentado para facilitar o toque */
+        color: #ffb400;
+    }
+
     .nav-links {
         position: fixed;
-        top: 70px;
-        left: -100%;
-        background-color: #1a1a1a;
-        width: 100%;
-        height: calc(100vh - 70px);
+        top: 0;
+        right: -100%; /* Escondido à direita */
+        background-color: rgba(26, 26, 26, 0.98); /* Fundo quase opaco */
+        width: 80%; /* Ocupa a maior parte da tela */
+        height: 100vh;
         flex-direction: column;
+        justify-content: center; /* Centraliza os links verticalmente */
         align-items: center;
-        padding-top: 30px;
-        transition: 0.4s;
-        z-index: 999;
+        transition: 0.4s ease-in-out;
+        z-index: 1000;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.5);
     }
-    #menu-check:checked ~ .nav-links { left: 0; }
-    
-    /* No celular, tudo vira 1 coluna vertical */
-    .grid-servicos, .equipe-grid, .contato-grid {
-        grid-template-columns: 1fr;
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-    .contato-card { width: 100%; max-width: 100%; }
-    .foto-container { width: 180px; height: 180px; }
-}
 
+    /* Quando o checkbox é marcado, o menu desliza para a tela */
+    #menu-check:checked ~ .nav-links {
+        right: 0;
+    }
+
+    .nav-links li {
+        margin: 20px 0; /* Mais espaçamento entre os links */
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links a {
+        font-size: 1.4rem; /* Letras maiores para leitura no celular */
+        display: block;
+        padding: 10px;
+        width: 100%;
+    }
+
+    /* Ajuste para o Dropdown no Mobile */
+    .dropdown-content {
+        position: static; /* No mobile, ele empilha abaixo do link pai */
+        display: none;
+        background-color: #222;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .dropdown:active .dropdown-content, 
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    /* Grids de conteúdo no celular */
+    .grid-servicos, .equipe-grid, .contato-grid {
+        grid-template-columns: 1fr !important;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
